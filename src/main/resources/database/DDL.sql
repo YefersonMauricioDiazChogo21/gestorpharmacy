@@ -43,6 +43,7 @@ CREATE TABLE unitmeasurement(
     CONSTRAINT pk_idunitmeasurement PRIMARY KEY (idum)
 );
 
+
 CREATE TABLE customer(
     idcustomer VARCHAR(20),
     namecustomer VARCHAR(50),
