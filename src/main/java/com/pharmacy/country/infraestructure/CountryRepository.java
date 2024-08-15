@@ -11,8 +11,6 @@ import com.pharmacy.country.domain.entity.Country;
 import com.pharmacy.country.domain.service.CountryService;
 
 public class CountryRepository implements CountryService{
-    private Connection connection;
-
     @Override
     public void createCountry(Country country) {
         try (Connection connection = Database.getConnection()){
