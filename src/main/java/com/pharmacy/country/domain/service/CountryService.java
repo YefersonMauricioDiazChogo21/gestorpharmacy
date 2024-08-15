@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Optional;
 import com.pharmacy.country.domain.entity.Country;
 
-public interface CountyService{
+public interface CountryService{
 
     void createCountry (Country country);
     void updateCountry (Country country);
-    Country deleteCountry (String id);
+    Country deleteCountry (String codecounrty);
     Optional<Country> findCountryById(String codecountry);
     List<Country> findAllCountries();
 }
