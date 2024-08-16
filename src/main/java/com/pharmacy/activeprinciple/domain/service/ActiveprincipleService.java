@@ -6,9 +6,9 @@ import com.pharmacy.activeprinciple.domain.entity.ActivePrinciple;;
 
 public interface ActiveprincipleService {
     void createActivePrinciple (ActivePrinciple activeprinciple);
-    void updateActivePrinciple (ActivePrinciple activeprinciple);
-    ActivePrinciple deleteActivePrinciple (String idap);
-    Optional<ActivePrinciple> findActivePrincipleById(String idap);
+    void updateActivePrinciple (int idap);
+    ActivePrinciple deleteActivePrinciple (int idap);
+    Optional<ActivePrinciple> findActivePrincipleById(int idap);
     List<ActivePrinciple> findAllCActivesPrinciples();
 
 }

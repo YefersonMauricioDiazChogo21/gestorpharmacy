@@ -1,16 +1,18 @@
 package com.pharmacy.activeprinciple.application;
 
+import java.util.Optional;
+
 import com.pharmacy.activeprinciple.domain.entity.ActivePrinciple;
 import com.pharmacy.activeprinciple.domain.service.ActiveprincipleService;
 
-public class CreateActivePrincipleUseCase {
+public class FindByIdActivePrincipleUseCase {
     private ActiveprincipleService activeprincipleService;
 
-    public CreateActivePrincipleUseCase(ActiveprincipleService activeprincipleService){
+    public FindByIdActivePrincipleUseCase(ActiveprincipleService activeprincipleService){
         this.activeprincipleService = activeprincipleService;
     }
 
-    public void execute(ActivePrinciple activePrinciple){
-        activeprincipleService.createActivePrinciple(activePrinciple);
+    public Optional<ActivePrinciple> execute(int id){
+        return activeprincipleService.findActivePrincipleById(id);
     }
 }
